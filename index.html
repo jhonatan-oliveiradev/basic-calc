@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3df637a2f2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="script.js"></script>
+    <title>Calculadora com JavaScript</title>
+  </head>
+  <body>
+    <div class="conteudo">
+      <div class="calculator">
+        <p class="result" id="resultado"></p>
+
+        <table>
+          <tr>
+            <td>
+              <button class="btn ac" id="btn_ac" style="width: 106px" onclick= "clean()">
+                AC
+              </button>
+            </td>
+            <td>
+              <button class="btn neg" id="btn_neg" onclick= "backspace()">
+                <i class="fas fa-backspace"></i>
+              </button>
+            </td>
+            <td>
+              <button class="btn especial" id="btn_div" onclick= "insert('/')">
+                <i class="fas fa-divide"></i>
+              </button>
+            </td>
+          </tr>
+          <tr>
+            <td><button class="btn" id="btn_1" onclick= "insert('7')">7</button></td>
+            <td><button class="btn" id="btn_2" onclick= "insert('8')">8</button></td>
+            <td><button class="btn" id="btn_3" onclick= "insert('9')">9</button></td>
+            <td><button class="btn especial" id="btn_mult" onclick= "insert('*')"><i class="fas fa-times"></i></button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" id="btn_4" onclick= "insert('4')">4</button></td>
+            <td><button class="btn" id="btn_5" onclick= "insert('5')">5</button></td>
+            <td><button class="btn" id="btn_6" onclick= "insert('6')">6</button></td>
+            <td><button class="btn especial" id="btn_sub" onclick= "insert('-')"><i class="fas fa-minus"></i></button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" id="btn_1" onclick= "insert('1')">1</button></td>
+            <td><button class="btn" id="btn_2" onclick= "insert('2')">2</button></td>
+            <td><button class="btn" id="btn_3" onclick= "insert('3')">3</button></td>
+            <td><button class="btn especial" id="btn_add" onclick= "insert('+')"><i class="fas fa-plus"></i></button></td>
+          </tr>
+          <tr>
+            <td><button class="btn" id="btn_0" onclick= "insert('0')">0</button></td>
+            <td><button class="btn" id="btn_ponto" onclick= "insert(',')">,</i></button></td>
+            <td>
+              <button class="btn igual" id="btn_igual" style="width: 106px" onclick= "confirma()">
+                <i class="fas fa-equals"></i>
+              </button>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
